@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image 2</title>
+    <link rel="stylesheet" href="css/styles.css"> <!-- Assuming you have some basic styles in this CSS -->
+    <style>
+        /* Additional styles for image1.html */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4; /* Optional: You can set a background color if needed */
+        }
+
+        .full-image-container {
+            text-align: center;
+        }
+
+        .full-image-container img {
+        max-width: 95%; /* Increased from 90% */
+        max-height: 80vh; /* Increased from 70vh */
+        }
+
+
+        .full-image-container p {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+        }
+
+        .full-image-container p::before,
+        .full-image-container p::after {
+            content: '"';
+            font-size: 3rem; /* Adjust this size if you want larger or smaller quotation marks */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .full-image-container p::before {
+            left: -1.5rem; /* Adjust this value to move the quotation mark closer or farther from the text */
+        }
+
+        .full-image-container p::after {
+            right: -1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-image-container">
+        <img src="images/image2.jpg" alt="Description of Image 2">
+        <p>A shot of a belted Kingfisher perched on a wooden fence. This lad her was on a lookout for fish in the stream directly underneath itself.</p>
+    </div>
+</body>
+</html>
